@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="../css/add.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading"><strong>ADD EMPLOYEE</strong></div> <br>
+        <form method="POST" action="/submit" id="form">
+            <div>  
+                <input type="text" placeholder="ID" name="id" id="id">
+                <input type="text" placeholder="NAME" name="name" id="name">
+                <input type="text" placeholder="DESIGNATION" name="designation" id="designation">
+                <input type="text" placeholder="SALARY" name="salary" id="salary">
+                <input type="text" placeholder="EXPERIENCE" name="experience" id="experience">
+                <input type="text" placeholder="EMAIL" name="email" id="email">
+                <input type="text" placeholder="PHONE" name="phone" id="phone">
+                <input type="file" placeholder="pic" id="pic" name="pic" onchange="picture()">
+                <div style="width: 200px; height: 200px;">
+                    <img src="" style="width: 100%; height: 100; object-fit: cover;" id="img" alt="">
+                </div>
+            </div>
+            <div>
+                <a href="../pages/index.html"><button type="submit">SAVE</button></a>
+            </div>
+        </form>
+    </div>
+    <script src="../js/addEmploye.js"></script>
+</body>
+</html>
